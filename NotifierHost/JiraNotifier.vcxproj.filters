@@ -39,9 +39,6 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>ZZZMisc\Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="jiraconnection_contract_i.c">
-      <Filter>ZZZMisc\Generated Files</Filter>
-    </ClCompile>
     <ClCompile Include="objmdl_contract_i.c">
       <Filter>ZZZMisc\Generated Files</Filter>
     </ClCompile>
@@ -79,9 +76,6 @@
     </ClInclude>
     <ClInclude Include="resource.h">
       <Filter>ZZZMisc\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="jiraconnection_contract_i.h">
-      <Filter>ZZZMisc\Generated Files</Filter>
     </ClInclude>
     <ClInclude Include="objmdl_contract_i.h">
       <Filter>ZZZMisc\Generated Files</Filter>
