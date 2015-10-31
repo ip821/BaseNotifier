@@ -51,9 +51,6 @@ extern CAppModule _Module;
 #include "..\model-libs\ViewMdl\Plugins.h"
 #include "..\model-libs\ViewMdl\Functions.h"
 
-#include "..\JiraConnection\Plugins.h"
-#include "..\JiraConnection\JiraFields.h"
-
 #include "Plugins.h"
 #include "AppSingleInstance.h"
 #include "AutostartManager.h"

@@ -143,10 +143,10 @@
     <Midl Include="NotifierHost.idl">
       <Filter>ZZZMisc\Source Files</Filter>
     </Midl>
-    <Midl Include="..\..\model-libs\ObjMdl\objmdl_contract_i.idl">
+    <Midl Include="..\model-libs\ViewMdl\viewmdl_contract_i.idl">
       <Filter>ZZZMisc\Source Files</Filter>
     </Midl>
-    <Midl Include="..\..\model-libs\ViewMdl\viewmdl_contract_i.idl">
+    <Midl Include="..\model-libs\ObjMdl\objmdl_contract_i.idl">
       <Filter>ZZZMisc\Source Files</Filter>
     </Midl>
   </ItemGroup>
