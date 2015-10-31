@@ -43,7 +43,7 @@ END
 
 #endif    // APSTUDIO_INVOKED
 
-IDR_MAINFRAME           ICON                    "..\\JiraNotify\\res\\jira.ico"
+IDR_MAINFRAME           ICON                    "..\\..\\app.ico"
 
 /////////////////////////////////////////////////////////////////////////////
 //
