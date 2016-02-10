@@ -247,3 +247,5 @@
 /curl/build/Win32/VC12/Debug_XP/lib/libcurl.tlog/rc.command.1.tlog
 /curl/build/Win32/VC12/Debug_XP/lib/libcurl.tlog/rc.read.1.tlog
 /curl/build/Win32/VC12/Debug_XP/lib/libcurl.tlog/rc.write.1.tlog
+/NotifierHost/Debug/tcnotifier.Build.CppClean.log
+/NotifierHost/Debug/tcnotifier.pch
