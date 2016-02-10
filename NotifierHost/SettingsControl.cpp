@@ -45,7 +45,7 @@ STDMETHODIMP CSettingsControl::Load(ISettings *pSettings)
 	RETURN_IF_FAILED(LoadEditBoxText(IDC_EDITPASSWORD, KEY_PASSWORD, pSettings));
 
 	UINT uTimeout = 1;
-	CComVariant vTimeout;
+    CComVar vTimeout;
 	if (SUCCEEDED(pSettings->GetVariantValue(L"TimerInterval", &vTimeout)) && vTimeout.vt == VT_I4)
 		uTimeout = vTimeout.intVal;
 
@@ -72,7 +72,7 @@ STDMETHODIMP CSettingsControl::Save(ISettings *pSettings)
 		bstrTimeout = "";
 
 	int val = _wtoi(bstrTimeout);
-	RETURN_IF_FAILED(pSettings->SetVariantValue(L"TimerInterval", &CComVariant(val)));
+	RETURN_IF_FAILED(pSettings->SetVariantValue(L"TimerInterval", &CComVar(val)));
 	return S_OK;
 }
 
@@ -89,14 +89,14 @@ HRESULT CSettingsControl::SaveEditBoxText(int id, BSTR bstrKey, ISettings* pSett
 
 	if (bstr == NULL)
 		bstr = "";
-	RETURN_IF_FAILED(pSettings->SetVariantValue(bstrKey, &CComVariant(bstr)));
+	RETURN_IF_FAILED(pSettings->SetVariantValue(bstrKey, &CComVar(bstr)));
 	return S_OK;
 }
 
 HRESULT CSettingsControl::LoadEditBoxText(int id, BSTR bstrKey, ISettings* pSettings)
 {
 	CHECK_E_POINTER(pSettings);
-	CComVariant vValue;
+    CComVar vValue;
 	CComBSTR bstr;
 	if (SUCCEEDED(pSettings->GetVariantValue(bstrKey, &vValue) && vValue.vt == VT_BSTR))
 		bstr = vValue.bstrVal;
